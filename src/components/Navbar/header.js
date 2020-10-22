@@ -10,8 +10,8 @@ function Header() {
       <Container>
   
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Link to="/"
-            className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+          <Link to="/react-portfolio"
+            className={location.pathname === "/react-portfolio" ? "nav-link active" : "nav-link"}>
             Juan P Flores
           </Link>
           
