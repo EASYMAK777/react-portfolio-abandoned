@@ -1,39 +1,15 @@
 import React from 'react';
-import { Container, Row, Col, } from 'react-bootstrap';
+
 import './App.css';
-import Header from "./components/Navbar/header";
-import Bio from './components/Bio/bio';
-import Foot from './components/Footer/footer'
+
+import About from './components/Pages/about';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Container>
-       
-       {/* Importing Header Component */}
-        <Row>
-          <Col>
-            <Header />    
-          </Col>
-        </Row>
-
-      {/* Import Bio Component */}
-    
-        <Row>
-          <Col>
-            <Bio/> 
-          </Col>
-        </Row>
-            
-            
-        <Row>
-          <Col>
-            <Foot/>
-          </Col>
-        </Row>
-      </Container>
+      <About/>
     </div>
 
 

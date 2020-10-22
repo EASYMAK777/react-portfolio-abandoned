@@ -1,12 +1,17 @@
 import React from 'react';
-import {} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import './footer.css';
 
 function Foot() {
     return (
+       <Container>
+
 
         <div className = "footer">
-            <footer>Juan P Flores 2020</footer>
+            <p>© Copyright 2020</p>
         </div>
+
+       </Container> 
 
     );
 }
