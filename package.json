@@ -1,5 +1,5 @@
 {
-  "homepage": "https://easymak777.github.io/",
+  "homepage": "https://easymak777.github.io/react-portfolio/",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -8,12 +8,13 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-scripts": "3.4.4"
   },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy":"gh-pages -b master -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
