@@ -1,12 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 import Header from "./components/Navbar/header"
+
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Container>
+        <Row>
+          <Col>
+            <Header/>
+          </Col>
+        </Row>
+          
+
+
+
+
+
+      </Container>
+
 
 
     </div>
