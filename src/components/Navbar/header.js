@@ -10,8 +10,8 @@ function Header() {
       <Container>
   
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Link to="/About"
-            className={location.pathname === "/About" ? "nav-link active" : "nav-link"}>
+          <Link to="/"
+            className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
             Juan P Flores
           </Link>
           

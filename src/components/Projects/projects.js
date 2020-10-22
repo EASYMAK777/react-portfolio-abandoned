@@ -23,7 +23,7 @@ function Projects() {
                                 width={500}
                                 height={500}
                                 className="weather-app"
-                                src={require('./weather-app.gif')}
+                                src={require('./QC-wateringhole.gif')}
                                 alt="weather-app"
                             />
                         </Media>

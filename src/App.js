@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
 import About from './components/Pages/about';
-import Header from './components/Navbar/header';
+
 import Portfolio from './components/Pages/portfolio';
 
 
@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div>
         
-        <Route exact path="/About" component ={About} />
+        <Route exact path="/react-portfolio" component ={About} />
         <Route exact path ="/Portfolio" component ={Portfolio}/>
         {/* <Route exact path ="/Contact" component ={Contact}/>
         <Routh exact path ="/linked-in" component={Linked-In}/>
