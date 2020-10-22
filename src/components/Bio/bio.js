@@ -1,6 +1,7 @@
 import React from 'react';
 import { Media,Container } from 'react-bootstrap';
 import "./bio.css";
+import "./Juan.jpg";
 
 function Bio() {
     return (
@@ -12,13 +13,12 @@ function Bio() {
                     <img
                         width={300}
                         height={300}
-                        className="mr-3"
-                        padding = ""
-                        src="https://picsum.photos/200/300"
-                        alt="Generic placeholder"
+                        className="mr-3"               
+                        src={require('./Juan.jpg')}
+                        alt="Juan and Augusto Flores"
                     />
                     <Media.Body>
-                        <h5>Media Heading</h5>
+                        <h5>Juan Flores</h5>
                         <p>
                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
                             ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
