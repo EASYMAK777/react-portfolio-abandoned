@@ -1,7 +1,9 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, } from 'react-bootstrap';
 import './App.css';
-import Header from "./components/Navbar/header"
+import Header from "./components/Navbar/header";
+import Main from './components/Main/main';
+
 
 
 function App() {
@@ -10,20 +12,25 @@ function App() {
       <Container>
         <Row>
           <Col>
-            <Header/>
+            <Header />
           </Col>
         </Row>
-          
-
-
-
-
-
+        <Row>
+          <Col>
+            <Main/>
+          </Col>
+        </Row>
       </Container>
-
-
-
     </div>
+
+
+
+
+
+
+
+
+
 
 
   );
