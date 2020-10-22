@@ -3,6 +3,7 @@ import { Container, Row, Col, } from 'react-bootstrap';
 import './App.css';
 import Header from "./components/Navbar/header";
 import Bio from './components/Bio/bio';
+import Foot from './components/Footer/footer'
 
 
 
@@ -27,11 +28,11 @@ function App() {
         </Row>
             
             
-        {/* <Row>
+        <Row>
           <Col>
-
+            <Foot/>
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </div>
 
