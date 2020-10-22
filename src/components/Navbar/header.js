@@ -1,26 +1,48 @@
 import React from 'react';
 
 import { Navbar, Nav, Container, } from "react-bootstrap";
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+    const location = useLocation();
     return (
     
       <Container>
   
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="#About">Juan P Flores</Navbar.Brand>
+          <Link to="/About"
+            className={location.pathname === "/About" ? "nav-link active" : "nav-link"}>
+            Juan P Flores
+          </Link>
+          
+          
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+              
+              <Link to="/Portfolio"
+                className={location.pathname === "/Portfolio" ? "nav-link active" : "nav-link"}>
+                Portfolio
+              </Link>
+              
+              <Link to="/Contact"
+              className={location.pathname === "/Contact" ? "nav-link active" : "nav-link"}>
+              Contact
+              </Link>
               
             </Nav>
             <Nav>
-              <Nav.Link href="#linked-in">Linked-in</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
+              <Link to="/linked-in"
+              className={location.pathname === "/linked-in" ? "nav-link active" : "nav-link"}>
+                Linked-in
+                </Link>
+              
+              <Link to ="/memes"
+              className={location.pathname === "/resume" ? "nav-link active" : "nav-link"}>
                 Dank Coder memes
-            </Nav.Link>
+              </Link>
+            
+            
             </Nav>
           </Navbar.Collapse>
         </Navbar>

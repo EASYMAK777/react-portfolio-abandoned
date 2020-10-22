@@ -1,17 +1,32 @@
 import React from 'react';
-
 import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 import About from './components/Pages/about';
-
+import Header from './components/Navbar/header';
+import Portfolio from './components/Pages/portfolio';
 
 
 function App() {
   return (
-    <div className="App">
-      <About/>
-    </div>
+    
+    <Router>
+      <div>
+        
+        <Route exact path="/About" component ={About} />
+        <Route exact path ="/Portfolio" component ={Portfolio}/>
+        {/* <Route exact path ="/Contact" component ={Contact}/>
+        <Routh exact path ="/linked-in" component={Linked-In}/>
+        <Route exact path ="/resume" component={Resume}/> */}
+        
+      </div>
 
+    </Router>
+    
+    
+    
+    
+    
 
 
 
