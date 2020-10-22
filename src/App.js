@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, } from 'react-bootstrap';
 import './App.css';
 import Header from "./components/Navbar/header";
-import Main from './components/Main/main';
+import Bio from './components/Bio/bio';
 
 
 
@@ -10,16 +10,28 @@ function App() {
   return (
     <div className="App">
       <Container>
+       
+       {/* Importing Header Component */}
         <Row>
           <Col>
-            <Header />
+            <Header />    
           </Col>
         </Row>
+
+      {/* Import Bio Component */}
+    
         <Row>
           <Col>
-            <Main/>
+            <Bio/> 
           </Col>
         </Row>
+            
+            
+        {/* <Row>
+          <Col>
+
+          </Col>
+        </Row> */}
       </Container>
     </div>
 
